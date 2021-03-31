@@ -1,0 +1,282 @@
+/* line 1, scss/base/_base.scss */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* line 9, scss/base/_base.scss */
+html {
+  height: 100%; }
+
+/* line 14, scss/base/_base.scss */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+  color: #000;
+  font-family: "Poppins", sans-serif; }
+
+/* ----- FOR IE ----- */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 30, scss/base/_base.scss */
+  .article-offer-icon a {
+    width: 100%; }
+  /* line 33, scss/base/_base.scss */
+  .main-reference .reference-item .reference-text {
+    width: 100%; }
+  /* line 36, scss/base/_base.scss */
+  .realization-row-new .realization-item {
+    flex: none !important;
+    flex-grow: 1 !important; }
+  /* line 40, scss/base/_base.scss */
+  .article-offer-item .info {
+    left: 50%;
+    transform: translateX(-50%); } }
+
+/* ----- FOR IOS DEVICES ----- */
+@supports (-webkit-overflow-scrolling: touch) {
+  /* line 47, scss/base/_base.scss */
+  .realization-row-new .realization-item {
+    flex: none !important;
+    flex-grow: 1 !important; } }
+
+/* line 54, scss/base/_base.scss */
+:root {
+  --blue:#007bff;
+  --indigo:#6610f2;
+  --purple:#6f42c1;
+  --pink:#e83e8c;
+  --red:#dc3545;
+  --orange:#fd7e14;
+  --yellow:#ffc107;
+  --green:#28a745;
+  --teal:#20c997;
+  --cyan:#17a2b8;
+  --white:#fff;
+  --gray:#6c757d;
+  --gray-dark:#343a40;
+  --primary:#007bff;
+  --secondary:#6c757d;
+  --success:#28a745;
+  --info:#17a2b8;
+  --warning:#ffc107;
+  --danger:#dc3545;
+  --light:#f8f9fa;
+  --dark:#343a40;
+  --breakpoint-xs:0;
+  --breakpoint-sm:576px;
+  --breakpoint-md:768px;
+  --breakpoint-lg:992px;
+  --breakpoint-xl:1200px;
+  --font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
+
+/* line 57, scss/base/_base.scss */
+*, ::after, ::before {
+  box-sizing: border-box; }
+
+/* line 61, scss/base/_base.scss */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 68, scss/base/_base.scss */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
+
+/* line 72, scss/base/_base.scss */
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  text-align: left;
+  background-color: #fff; }
+
+/* line 82, scss/base/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem; }
+
+/* line 87, scss/base/_base.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+/* line 91, scss/base/_base.scss */
+b, strong {
+  font-weight: bolder; }
+
+/* line 94, scss/base/_base.scss */
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #000; }
+
+/* line 100, scss/base/_base.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 104, scss/base/_base.scss */
+a:not([href]):not([tabindex]) {
+  text-decoration: none; }
+
+/* line 107, scss/base/_base.scss */
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+/* line 112, scss/base/_base.scss */
+svg {
+  overflow: hidden;
+  vertical-align: middle; }
+
+/* line 116, scss/base/_base.scss */
+label {
+  display: inline-block;
+  margin-bottom: .5rem; }
+
+/* line 121, scss/base/_base.scss */
+button {
+  border-radius: 0; }
+
+/* line 124, scss/base/_base.scss */
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+/* line 131, scss/base/_base.scss */
+button, input {
+  overflow: visible; }
+
+/* line 135, scss/base/_base.scss */
+button, select {
+  text-transform: none; }
+
+/* line 138, scss/base/_base.scss */
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button; }
+
+/* line 142, scss/base/_base.scss */
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer; }
+
+/* line 145, scss/base/_base.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 149, scss/base/_base.scss */
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
+/* line 153, scss/base/_base.scss */
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 156, scss/base/_base.scss */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2; }
+
+/* line 162, scss/base/_base.scss */
+.h1, h1 {
+  font-size: 2.5rem; }
+
+/* line 166, scss/base/_base.scss */
+.h2, h2 {
+  font-size: 2rem; }
+
+/* line 170, scss/base/_base.scss */
+.h3, h3 {
+  font-size: 1.75rem; }
+
+/* line 173, scss/base/_base.scss */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  /* line 182, scss/base/_base.scss */
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  /* line 188, scss/base/_base.scss */
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  /* line 194, scss/base/_base.scss */
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1400px) {
+  /* line 200, scss/base/_base.scss */
+  .container {
+    max-width: 1300px; } }
+
+/* line 208, scss/base/_base.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* line 215, scss/base/_base.scss */
+input[type=number]:focus::-webkit-inner-spin-button,
+input[type=number]:focus::-webkit-outer-spin-button,
+input[type=number]:hover::-webkit-inner-spin-button,
+input[type=number]:hover::-webkit-outer-spin-button {
+  -webkit-appearance: inner-spin-button;
+  margin: 0 2px 0 0; }
+
+/* line 225, scss/base/_base.scss */
+input[type=number] {
+  -moz-appearance: textfield; }
+
+/* line 230, scss/base/_base.scss */
+input[type=number]:focus,
+input[type=number]:hover {
+  -moz-appearance: number-input; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-display: swap; }
+
+/* line 1, scss/pages/_home.scss */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: wheat; }
+
+/* line 10, scss/pages/_home.scss */
+.btn {
+  padding: 1rem 2.5rem;
+  background-color: #ED8936;
+  font-size: 1.125rem;
+  border-radius: 0.25rem;
+  outline: none; }
+
+/* line 18, scss/pages/_home.scss */
+.btn:hover {
+  background-color: black;
+  color: white; }

@@ -1,0 +1,21 @@
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: wheat;
+}
+
+.btn{
+    padding: 1rem 2.5rem;
+    background-color: #ED8936;
+    font-size: 1.125rem;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}

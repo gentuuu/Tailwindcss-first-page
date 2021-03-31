@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .min-h-90{
+        min-height: 90vh
+    }
+    .hero-bg{
+        background-image: url('../img/1.jpg');
+    }
+    .max-width{
+        max-width: 250px
+    }
+}
+
+.form-label{
+    @apply uppercase text-gray-700 text-xs font-semibold mb-2;
+}
+
+.form-input{
+    @apply px-3 py-3 text-gray-700 border-gray-700 rounded text-sm bg-white  w-full border-2;
+}
+
+.form-input:focus{
+    @apply outline-none;
+}
+
+.form-input::placeholder{
+    @apply text-gray-500;
+}
